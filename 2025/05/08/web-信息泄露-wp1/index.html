@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  
+  
+  <title>web_信息泄露-wp1 | 网安学习</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="信息泄露Git泄露 题目来源：BUUCTF    可以看到题目中很明确地提示了Git泄露，所以使用可以使用gitHack工具 这里推荐一个老师的博客，对学习很有帮助 (Ő∀Ő3)ノ骗你的嘿嘿！ 链接如上 打开cmd，输入命令python githack.py http:&#x2F;&#x2F;8ce85732-c694-4130-bada-19ab0664dc00.node5.buuoj.cn:81&#x2F;.git 本来题">
+<meta property="og:type" content="article">
+<meta property="og:title" content="web_信息泄露-wp1">
+<meta property="og:url" content="http://jetbot1.github.io/2025/05/08/web-%E4%BF%A1%E6%81%AF%E6%B3%84%E9%9C%B2-wp1/index.html">
+<meta property="og:site_name" content="网安学习">
+<meta property="og:description" content="信息泄露Git泄露 题目来源：BUUCTF    可以看到题目中很明确地提示了Git泄露，所以使用可以使用gitHack工具 这里推荐一个老师的博客，对学习很有帮助 (Ő∀Ő3)ノ骗你的嘿嘿！ 链接如上 打开cmd，输入命令python githack.py http:&#x2F;&#x2F;8ce85732-c694-4130-bada-19ab0664dc00.node5.buuoj.cn:81&#x2F;.git 本来题">
+<meta property="og:locale" content="zh_CN">
+<meta property="og:image" content="c:\Users\YDN\AppData\Roaming\Typora\typora-user-images\image-20250508230604944.png">
+<meta property="og:image" content="c:\Users\YDN\AppData\Roaming\Typora\typora-user-images\image-20250508231112133.png">
+<meta property="og:image" content="c:\Users\YDN\AppData\Roaming\Typora\typora-user-images\image-20250508231158279.png">
+<meta property="article:published_time" content="2025-05-08T15:02:50.000Z">
+<meta property="article:modified_time" content="2025-08-25T10:13:09.751Z">
+<meta property="article:author" content="Eureka">
+<meta property="article:tag" content="初学信息泄露一些题目的wp">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="c:\Users\YDN\AppData\Roaming\Typora\typora-user-images\image-20250508230604944.png">
+  
+    <link rel="alternate" href="/atom.xml" title="网安学习" type="application/atom+xml">
+  
+  
+    <link rel="shortcut icon" href="/favicon.png">
+  
+  
+  
+<link rel="stylesheet" href="/css/style.css">
+
+  
+    
+<link rel="stylesheet" href="/fancybox/jquery.fancybox.min.css">
+
+  
+  
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/fork-awesome@1.2.0/css/fork-awesome.min.css">
+
+<meta name="generator" content="Hexo 7.3.0"></head>
+
+<body>
+  <div id="container">
+    <div id="wrap">
+      <header id="header">
+  <div id="banner"></div>
+  <div id="header-outer" class="outer">
+    <div id="header-title" class="inner">
+      <h1 id="logo-wrap">
+        <a href="/" id="logo">网安学习</a>
+      </h1>
+      
+        <h2 id="subtitle-wrap">
+          <a href="/" id="subtitle">学习过程中对知识的总结</a>
+        </h2>
+      
+    </div>
+    <div id="header-inner" class="inner">
+      <nav id="main-nav">
+        <a id="main-nav-toggle" class="nav-icon"><span class="fa fa-bars"></span></a>
+        
+          <a class="main-nav-link" href="/">Home</a>
+        
+          <a class="main-nav-link" href="/archives">Archives</a>
+        
+      </nav>
+      <nav id="sub-nav">
+        
+        
+          <a class="nav-icon" href="/atom.xml" title="RSS 订阅"><span class="fa fa-rss"></span></a>
+        
+        <a class="nav-icon nav-search-btn" title="搜索"><span class="fa fa-search"></span></a>
+      </nav>
+      <div id="search-form-wrap">
+        <form action="//google.com/search" method="get" accept-charset="UTF-8" class="search-form"><input type="search" name="q" class="search-form-input" placeholder="搜索"><button type="submit" class="search-form-submit">&#xF002;</button><input type="hidden" name="sitesearch" value="http://jetbot1.github.io"></form>
+      </div>
+    </div>
+  </div>
+</header>
+
+      <div class="outer">
+        <section id="main"><article id="post-web-信息泄露-wp1" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
+  <div class="article-meta">
+    <a href="/2025/05/08/web-%E4%BF%A1%E6%81%AF%E6%B3%84%E9%9C%B2-wp1/" class="article-date">
+  <time class="dt-published" datetime="2025-05-08T15:02:50.000Z" itemprop="datePublished">2025-05-08</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 class="p-name article-title" itemprop="headline name">
+      web_信息泄露-wp1
+    </h1>
+  
+
+      </header>
+    
+    <div class="e-content article-entry" itemprop="articleBody">
+      
+        <h2 id="信息泄露"><a href="#信息泄露" class="headerlink" title="信息泄露"></a>信息泄露</h2><h4 id="Git泄露"><a href="#Git泄露" class="headerlink" title="Git泄露"></a>Git泄露</h4><ul>
+<li><p>题目来源：BUUCTF</p>
+<p><img src="C:\Users\YDN\AppData\Roaming\Typora\typora-user-images\image-20250508230604944.png" alt="image-20250508230604944"></p>
+</li>
+</ul>
+<p>可以看到题目中很明确地提示了Git泄露，所以使用可以使用gitHack工具</p>
+<p>这里推荐一个老师的博客，对学习很有帮助</p>
+<p><a target="_blank" rel="noopener" href="https://www.cnblogs.com/Lmg66/p/13598803.html">(Ő∀Ő3)ノ骗你的嘿嘿！</a></p>
+<p>链接如上</p>
+<p>打开cmd，输入命令python githack.py <a target="_blank" rel="noopener" href="http://8ce85732-c694-4130-bada-19ab0664dc00.node5.buuoj.cn:81/.git">http://8ce85732-c694-4130-bada-19ab0664dc00.node5.buuoj.cn:81/.git</a></p>
+<p>本来题目给的链接是没有&#x2F;.git的，但是既然明确的告诉是git泄露，所以可以直接找.git目录</p>
+<p>这里忘记截图了，寻找成功之后在文件夹里会出现一个文件夹</p>
+<p><img src="C:\Users\YDN\AppData\Roaming\Typora\typora-user-images\image-20250508231112133.png" alt="image-20250508231112133"></p>
+<p>打开之后，发现是一个index.html文件，点开</p>
+<p><img src="C:\Users\YDN\AppData\Roaming\Typora\typora-user-images\image-20250508231158279.png" alt="image-20250508231158279"></p>
+<p>得到flag</p>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://jetbot1.github.io/2025/05/08/web-%E4%BF%A1%E6%81%AF%E6%B3%84%E9%9C%B2-wp1/" data-id="cmeqyzbe30002rsvs4einfbja" data-title="web_信息泄露-wp1" class="article-share-link"><span class="fa fa-share">分享</span></a>
+      
+      
+      
+  <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/%E5%88%9D%E5%AD%A6%E4%BF%A1%E6%81%AF%E6%B3%84%E9%9C%B2%E4%B8%80%E4%BA%9B%E9%A2%98%E7%9B%AE%E7%9A%84wp/" rel="tag">初学信息泄露一些题目的wp</a></li></ul>
+
+    </footer>
+  </div>
+  
+    
+<nav id="article-nav">
+  
+    <a href="/2025/08/25/2025%E5%B9%B4%E5%A4%8F%E5%AD%A3%E3%80%8A%E7%A7%BB%E5%8A%A8%E8%BD%AF%E4%BB%B6%E5%BC%80%E5%8F%91%E3%80%8B%E5%AE%9E%E9%AA%8C%E6%8A%A5%E5%91%8A/" id="article-nav-newer" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">前一篇</strong>
+      <div class="article-nav-title">
+        
+          (no title)
+        
+      </div>
+    </a>
+  
+  
+    <a href="/2025/05/07/web-http%E5%8D%8F%E8%AE%AE-wp1/" id="article-nav-older" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">后一篇</strong>
+      <div class="article-nav-title"></div>
+    </a>
+  
+</nav>
+
+  
+</article>
+
+
+</section>
+        
+          <aside id="sidebar">
+  
+    
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">标签</h3>
+    <div class="widget">
+      <ul class="tag-list" itemprop="keywords"><li class="tag-list-item"><a class="tag-list-link" href="/tags/html/" rel="tag">html</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E5%88%9D%E5%AD%A6%E4%BF%A1%E6%81%AF%E6%B3%84%E9%9C%B2%E4%B8%80%E4%BA%9B%E9%A2%98%E7%9B%AE%E7%9A%84wp/" rel="tag">初学信息泄露一些题目的wp</a></li></ul>
+    </div>
+  </div>
+
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">标签云</h3>
+    <div class="widget tagcloud">
+      <a href="/tags/html/" style="font-size: 10px;">html</a> <a href="/tags/%E5%88%9D%E5%AD%A6%E4%BF%A1%E6%81%AF%E6%B3%84%E9%9C%B2%E4%B8%80%E4%BA%9B%E9%A2%98%E7%9B%AE%E7%9A%84wp/" style="font-size: 10px;">初学信息泄露一些题目的wp</a>
+    </div>
+  </div>
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">归档</h3>
+    <div class="widget">
+      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2025/08/">八月 2025</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2025/05/">五月 2025</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2025/04/">四月 2025</a></li></ul>
+    </div>
+  </div>
+
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">最新文章</h3>
+    <div class="widget">
+      <ul>
+        
+          <li>
+            <a href="/2025/08/25/2025%E5%B9%B4%E5%A4%8F%E5%AD%A3%E3%80%8A%E7%A7%BB%E5%8A%A8%E8%BD%AF%E4%BB%B6%E5%BC%80%E5%8F%91%E3%80%8B%E5%AE%9E%E9%AA%8C%E6%8A%A5%E5%91%8A/">(no title)</a>
+          </li>
+        
+          <li>
+            <a href="/2025/05/08/web-%E4%BF%A1%E6%81%AF%E6%B3%84%E9%9C%B2-wp1/">web_信息泄露-wp1</a>
+          </li>
+        
+          <li>
+            <a href="/2025/05/07/web-http%E5%8D%8F%E8%AE%AE-wp1/">(no title)</a>
+          </li>
+        
+          <li>
+            <a href="/2025/04/23/HTML-1/">HTML_1</a>
+          </li>
+        
+      </ul>
+    </div>
+  </div>
+
+  
+</aside>
+        
+      </div>
+      <footer id="footer">
+  
+  <div class="outer">
+    <div id="footer-info" class="inner">
+      
+      &copy; 2025 Eureka<br>
+      Powered by <a href="https://hexo.io/" target="_blank">Hexo</a>
+    </div>
+  </div>
+</footer>
+
+    </div>
+    <nav id="mobile-nav">
+  
+    <a href="/" class="mobile-nav-link">Home</a>
+  
+    <a href="/archives" class="mobile-nav-link">Archives</a>
+  
+</nav>
+    
+
+
+<script src="/js/jquery-3.6.4.min.js"></script>
+
+
+
+  
+<script src="/fancybox/jquery.fancybox.min.js"></script>
+
+
+
+
+<script src="/js/script.js"></script>
+
+
+
+
+
+  </div>
+</body>
+</html>
